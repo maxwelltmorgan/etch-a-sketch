@@ -1,0 +1,90 @@
+html {
+    background-color: dodgerblue;
+}
+
+#container {
+    background-color: red;
+    position: absolute;
+    width: 900px;
+    height: 600px;
+    margin: 50px;
+    border-radius: 15px;
+    z-index: 3;
+
+}
+
+#magic {
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+    top: 30px;
+    margin-left: 230px;
+    color: gold;
+    font-family: 'Ranga', cursive;
+}
+
+#etch {
+    position: absolute;
+    font-family: 'Kaushan Script', cursive;
+    color: gold;
+    font-size: 25px;
+    margin-left: 340px;
+}
+
+#screen {
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+    top: 30px;
+    margin-left: 630px;
+    color: gold;
+    font-family: 'Ranga', cursive;
+}
+
+#inner {
+    background-color: silver;
+    width: 695px;
+    height: 390px;
+    margin-left: 100px;
+    margin-top: 100px;
+    border-radius: 15px;
+    z-index: 2;
+}
+
+#left-dial {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    top: 500;
+    margin-left: 12px;
+    z-index: 1;
+    background-color: white;
+}
+
+#specs {
+    position: absolute;
+    color: #e50000;
+    margin-left: 220px;
+    margin-top: 25px;
+}
+
+#disclaimer {
+    position: absolute;
+    color: #e50000;
+    margin-left: 370px;
+    margin-top: 60px;
+}
+
+#right-dial {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    top: 500;
+    margin-left: 785px;
+    z-index: 1;
+    background-color: white;
+}
