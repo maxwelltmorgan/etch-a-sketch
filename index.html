@@ -8,27 +8,33 @@
 
 <div id="container">
     <div class="sub">
-        <p id="magic">Magic</p>
+        <p id="magic">Super</p>
     </div>
     <div id="etch">
-        <h2>Etch A Sketch</h2>
+        <h2>Hover To Sketch</h2>
     </div>
     <div class="sub">
-        <p id="screen">Screen</p>
+        <p id="screen">Cool</p>
     </div>
     <div id="inner">
     </div>
     <div id="left-dial">
     </div>
     <div>
-        <p id="specs">MAGIC SCREEN IS GLASS SET IN STURDY PLASTIC CASE</p>
-        <p id="disclaimer">USE WITH CARE</p>
+        <p id="specs">SUPER COOL SCREEN WILL MAKE YOU FEEL ARTISTIC</p>
+        <p id="disclaimer">USE AT YOUR OWN RISK</p>
     </div>
     <div id="right-dial">
     </div>
 </div>
-<div class="reset">
-    <button onclick="restart()">Shake and Clean</button>
+<div class="controls">
+    <button onclick="restart()">Refresh Screen</button>
+
+    <div class="colorControls">
+        <label>Color Controls:</label>
+        <input id="black" type="button" value="black" onclick="selectColor(this)"/>
+        <input id="rainbow" type="button" value="rainbow" onclick="selectColor(this)"/>
+    </div>
 </div>
 
 <script src="index.js"></script>

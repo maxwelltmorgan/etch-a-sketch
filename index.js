@@ -1,18 +1,20 @@
 const inner = document.querySelector('#inner');
 
 let squaresPerSide = 16;
+let color = 'black';
+const rainbow = ['hotpink', 'purple', 'blue', 'limegreen', 'yellow', 'orange', 'red'];
 
-const black = 'black';
-const rainbow = ['violet', 'indigo', 'blue', 'limegreen', 'yellow', 'orange', 'red'];
-const shades = ['#cccccc', '#b2b2b2', '#999999', '#7f7f7f', '#666666', '#4c4c4c', '#323232', '#191919', '#000000'];
-
-
-
-const setColor = () => {
-
-    return `${rainbow[Math.floor(Math.random() * 7)]}`
-//return `${black}`;
+const setColor = (color) => {
+    if (color == 'rainbow'){
+        return `${rainbow[Math.floor(Math.random() * 7)]}`;
+    } else {
+        return `black`;
+    }
 };
+
+const selectColor = (element) => {
+    color = element.value;
+}
 
 const setGrid = (squaresPerSide) => {
 
@@ -31,7 +33,23 @@ const setGrid = (squaresPerSide) => {
 
         squares.forEach((square) => {
             square.addEventListener('mouseover', () => {
-                square.style.backgroundColor = setColor();
+                square.style.backgroundColor = setColor(color);
+
+                if(square.style.backgroundColor == 'black'){
+                    if(square.style.opacity < .1){
+                        square.style.opacity = .1;
+                    } else if(square.style.opacity < .3){
+                        square.style.opacity = .3;
+                    } else if(square.style.opacity < .5){
+                        square.style.opacity = .5;
+                    } else if(square.style.opacity < .7){
+                        square.style.opacity = .7;
+                    } else if(square.style.opacity < .8){
+                        square.style.opacity = .8;
+                    } else if(square.style.opacity < .9){
+                        square.style.opacity = .9;
+                    }
+                }
             });
         });
     } else {
@@ -43,7 +61,6 @@ setGrid(squaresPerSide);
 const restart = () => {
     let squares = document.querySelectorAll('.square');
     squares.forEach(square => square.remove());
-    let squaresPerSide = prompt('enter # of squares per axis (range 1-100)');
+    let squaresPerSide = prompt('Creating new grid. How many squares would you like per axis? (range 1-100)', '16');
     setGrid(squaresPerSide);
-
 }

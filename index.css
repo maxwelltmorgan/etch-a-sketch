@@ -10,7 +10,6 @@ html {
     margin: 50px;
     border-radius: 15px;
     z-index: 3;
-
 }
 
 #magic {
@@ -94,15 +93,74 @@ html {
     height: 20px;
     width: 40px;
     display: flex;
+    z-index: 3;
 }
 
-.reset {
+.controls {
     position: absolute;
-    top: 700px;
-    margin-left: 400px;
+    top: 680px;
+    margin-left: 50px;
     display: block;
+    background-color: #0066ff;
+    border-radius: 5px;
+    padding: 30px 50px 30px 50px;
 }
 
-.resetButton {
-    display: inline-block;
+button {
+    background-color: red;
+    border-color: red;
+    color: gold;
+    border-radius: 5px;
+    font-family: 'Ranga', cursive;
+    font-size: 30px;
+    margin-right: 300px;
+}
+
+button:hover {
+    border-color: gold;
+}
+
+button:active {
+    background-color: gold;
+    color: red;
+}
+
+.colorControls {
+    display: inline;
+}
+
+label {
+    font-family: 'Ranga', cursive;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: darkblue;
+    margin-right: 5px;
+}
+
+#black {
+    background-color: black;
+    border-color: black;
+    color: white;
+    border-radius: 5px;
+    font-family: 'Ranga', cursive;
+    font-size: 30px;
+}
+
+#black:hover {
+    background-color: white;
+    color: black;
+}
+
+#rainbow {
+    background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
+    border-color: darkblue;
+    color: darkblue;
+    border-radius: 5px;
+    font-family: 'Ranga', cursive;
+    font-size: 30px;
+}
+
+#rainbow:hover {
+    border-color: red;
+    color: red;
 }
