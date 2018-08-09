@@ -1,8 +1,8 @@
-#Hover Sketch
+# Hover Sketch
 
 ![screenshot](hover_sketch.png)
 
-##Etch-A-Sketch project focused on DOM manipulation skills
+## Etch-A-Sketch project focused on DOM manipulation skills
 
 1. Develop grid in container using JavaScript
 
